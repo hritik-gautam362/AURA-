@@ -79,11 +79,21 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         {/* Step 1 */}
         {step === 1 && (
           <div className="space-y-6 text-center animate-in fade-in zoom-in-95 duration-200">
-            <img
-              src="/orienta-logo.png"
-              alt="Orienta by FillFlow"
-              className="w-16 h-16 rounded-2xl object-contain mx-auto shadow-md"
-            />
+            <div className="flex items-center justify-center gap-3.5 mx-auto">
+              <img
+                src="/orienta-symbol.png"
+                alt="Orienta Logo Symbol"
+                className="w-14 h-14 rounded-2xl object-contain shadow-xs shrink-0"
+              />
+              <div className="flex flex-col text-left justify-center leading-none">
+                <span className="text-2xl font-bold text-[#2B171B] tracking-tight font-sans">
+                  Orienta
+                </span>
+                <span className="text-xs text-[#795B62] font-medium tracking-wide mt-1">
+                  by FillFlow
+                </span>
+              </div>
+            </div>
 
             <div className="space-y-2">
               <h3 className="text-2xl font-bold text-[#2B171B] font-serif">

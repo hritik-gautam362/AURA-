@@ -534,11 +534,21 @@ function AppContent() {
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-[#FCE4EC] opacity-60 blur-3xl pointer-events-none animate-aura-pulse" />
 
         <div className="relative z-10 flex flex-col items-center space-y-4 max-w-sm text-center card-fade-in">
-          <img
-            src="/orienta-logo.png"
-            alt="Orienta by FillFlow"
-            className="w-16 h-16 rounded-2xl object-contain shadow-md animate-aura-pulse"
-          />
+          <div className="flex items-center gap-3 animate-aura-pulse">
+            <img
+              src="/orienta-symbol.png"
+              alt="Orienta Logo Symbol"
+              className="w-14 h-14 rounded-2xl object-contain shadow-xs shrink-0"
+            />
+            <div className="flex flex-col text-left justify-center leading-none">
+              <span className="text-2xl font-bold text-[#2B171B] tracking-tight font-sans">
+                Orienta
+              </span>
+              <span className="text-xs text-[#795B62] font-medium tracking-wide mt-1">
+                by FillFlow
+              </span>
+            </div>
+          </div>
           <div className="space-y-1.5">
             <h3 className="text-xl font-bold font-serif text-[#2B171B]">
               Opening Your Private Vault

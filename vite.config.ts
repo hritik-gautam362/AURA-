@@ -16,6 +16,7 @@ export default defineConfig(() => {
           'favicon.ico',
           'favicon.png',
           'orienta-logo.png',
+          'orienta-symbol.png',
           'icons/icon.svg',
           'icons/icon-192x192.png',
           'icons/icon-512x512.png',

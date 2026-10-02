@@ -62,10 +62,18 @@ export const Navigation: React.FC<NavigationProps> = ({
           aria-label="Orienta by FillFlow Home"
         >
           <img
-            src="/orienta-logo.png"
-            alt="Orienta by FillFlow"
-            className="h-10 w-10 object-contain rounded-xl shadow-xs"
+            src="/orienta-symbol.png"
+            alt="Orienta Logo Symbol"
+            className="w-9 h-9 object-contain rounded-xl shadow-2xs shrink-0"
           />
+          <div className="flex flex-col justify-center leading-none">
+            <span className="text-base font-bold text-[#2B171B] tracking-tight font-sans">
+              Orienta
+            </span>
+            <span className="text-[10px] text-[#795B62] font-medium tracking-wide mt-0.5">
+              by FillFlow
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center gap-1.5">
@@ -114,21 +122,29 @@ export const Navigation: React.FC<NavigationProps> = ({
           {/* Logo & Brand */}
           <div
             onClick={() => onTabChange('home')}
-            className="flex items-center gap-3 cursor-pointer select-none"
+            className="flex items-center gap-2.5 cursor-pointer select-none"
             role="button"
             tabIndex={0}
             onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onTabChange('home'); }}
             aria-label="Orienta by FillFlow Home"
           >
             <img
-              src="/orienta-logo.png"
-              alt="Orienta by FillFlow"
-              className="h-12 w-12 object-contain rounded-xl shadow-xs"
+              src="/orienta-symbol.png"
+              alt="Orienta Logo Symbol"
+              className="w-10 h-10 object-contain rounded-xl shadow-xs shrink-0"
             />
+            <div className="flex flex-col justify-center leading-none">
+              <span className="text-lg font-bold text-[#2B171B] tracking-tight font-sans">
+                Orienta
+              </span>
+              <span className="text-xs text-[#795B62] font-medium tracking-wide mt-0.5">
+                by FillFlow
+              </span>
+            </div>
             {!isOnline && (
               <span
                 id="desktop-offline-badge"
-                className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FFF0F2] border border-[#FFCDD2] text-[#B71C1C] text-[10px] font-semibold"
+                className="flex items-center gap-1 ml-1.5 px-2 py-0.5 rounded-full bg-[#FFF0F2] border border-[#FFCDD2] text-[#B71C1C] text-[10px] font-semibold"
               >
                 <WifiOff className="w-3 h-3" />
                 Offline (Vault Ready)

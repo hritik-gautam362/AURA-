@@ -50,24 +50,22 @@
 ## 3. Locations Where Logo Was Replaced
 
 1. **Application Header (Mobile)**
-   - **Previous:** Maroon rounded rectangle with a white Lucide `<Heart>` icon + HTML text "Orienta by FillFlow".
-   - **Updated:** Sized `<img src="/orienta-logo.png" alt="Orienta by FillFlow" className="h-10 w-10 object-contain rounded-xl shadow-xs" />`.
-   - **Mobile Responsiveness:** Fits cleanly within touch-friendly top navigation bar across narrow 320px–430px viewports without horizontal crowding or overflow.
+   - **Branding Layout:** `[ LOGO SYMBOL ]  Orienta / by FillFlow`
+   - **Implementation:** Symbol icon (`/orienta-symbol.png`, `w-9 h-9`) with right-aligned vertical typography block: main wordmark `Orienta` (text-base, font-bold) and secondary subtitle `by FillFlow` (text-[10px], font-medium).
+   - **Mobile Responsiveness:** Fits cleanly within touch-friendly top navigation bar across narrow 320px–430px viewports with zero horizontal crowding or overflow.
 
 2. **Application Header (Desktop)**
-   - **Previous:** Maroon rounded rectangle with a white Lucide `<Heart>` icon + HTML text "Orienta by FillFlow".
-   - **Updated:** Proportionally sized `<img src="/orienta-logo.png" alt="Orienta by FillFlow" className="h-12 w-12 object-contain rounded-xl shadow-xs" />` positioned alongside the offline readiness indicator.
+   - **Branding Layout:** `[ LOGO SYMBOL ]  Orienta / by FillFlow`
+   - **Implementation:** Symbol icon (`/orienta-symbol.png`, `w-10 h-10`) with right-aligned vertical typography block: `Orienta` (text-lg, font-bold) and `by FillFlow` (text-xs, font-medium) positioned alongside the offline readiness indicator.
 
 3. **Onboarding Modal (Step 1 Welcome Screen)**
-   - **Previous:** Large maroon box with a pink heart fill.
-   - **Updated:** Centered `<img src="/orienta-logo.png" alt="Orienta by FillFlow" className="w-16 h-16 rounded-2xl object-contain mx-auto shadow-md" />`.
+   - **Implementation:** Centered brand composition featuring the symbol (`w-14 h-14`) and right-aligned typography (`Orienta` in text-2xl bold, `by FillFlow` in text-xs).
 
 4. **Vault Loading / Splash Screen**
-   - **Previous:** Pulsing white box with a maroon heart fill.
-   - **Updated:** Pulsing `<img src="/orienta-logo.png" alt="Orienta by FillFlow" className="w-16 h-16 rounded-2xl object-contain shadow-md animate-aura-pulse" />`.
+   - **Implementation:** Pulsing brand composition featuring the symbol (`w-14 h-14`) and right-aligned typography (`Orienta` in text-2xl bold, `by FillFlow` in text-xs).
 
-5. **Notification Messages**
-   - Notification dispatch continues to reference `/icons/icon-192x192.png`, now rendering the new Orienta branding.
+5. **Notification Messages & PWA Icons**
+   - Notification dispatch and PWA manifests reference the standalone square symbol assets (`/icons/icon-192x192.png`, `/icons/icon-512x512.png`, `/favicon.ico`).
 
 ---
 
