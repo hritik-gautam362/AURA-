@@ -91,7 +91,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({ calcResult, stats })
               Insights in Progress
             </h3>
             <p className="text-xs text-[#795B62] mt-0.5">
-              Insights become available as Aura learns your cycle pattern.
+              Insights become available as Orienta learns your cycle pattern.
             </p>
           </div>
         </div>

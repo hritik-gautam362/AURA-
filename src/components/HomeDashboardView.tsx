@@ -297,7 +297,7 @@ export const HomeDashboardView: React.FC<HomeDashboardViewProps> = ({
             </div>
           ) : (
             <p className="text-xs text-[#795B62] pt-1">
-              Insights become available as Aura learns your cycle pattern.
+              Insights become available as Orienta learns your cycle pattern.
             </p>
           )}
         </div>

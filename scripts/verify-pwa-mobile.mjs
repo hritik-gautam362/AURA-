@@ -208,8 +208,8 @@ async function main() {
     console.log('  theme_color:', manifestData.theme_color);
     console.log('  icons count:', manifestData.icons.length);
 
-    if (manifestData.name !== 'Aura Cycle & Wellness') throw new Error('Incorrect manifest name');
-    if (manifestData.short_name !== 'Aura Cycle') throw new Error('Incorrect manifest short_name');
+    if (manifestData.name !== 'Orienta by FillFlow') throw new Error('Incorrect manifest name');
+    if (manifestData.short_name !== 'Orienta') throw new Error('Incorrect manifest short_name');
     if (manifestData.display !== 'standalone') throw new Error('Manifest display must be standalone');
     if (manifestData.orientation !== 'portrait') throw new Error('Manifest orientation must be portrait');
     if (manifestData.icons.length < 3) throw new Error('Missing required icons');

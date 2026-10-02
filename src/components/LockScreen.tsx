@@ -91,7 +91,7 @@ export const LockScreen: React.FC = () => {
         {/* Title & Description */}
         <div className="space-y-1.5">
           <h1 className="text-2xl sm:text-3xl font-bold font-serif text-[#2B171B]">
-            {isSetupMode ? 'Secure Your Vault' : 'Aura Vault Locked'}
+            {isSetupMode ? 'Secure Your Vault' : 'Orienta Vault Locked'}
           </h1>
           <p className="text-xs sm:text-sm text-[#795B62] max-w-xs mx-auto leading-relaxed">
             {isSetupMode

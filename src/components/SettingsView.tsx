@@ -210,7 +210,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
       isTest: true,
     });
     if (result.success) {
-      setNotificationTestStatus('Test notification sent successfully (Title: "Aura reminder", Body: "This is a notification test.").');
+      setNotificationTestStatus('Test notification sent successfully (Title: "Orienta reminder", Body: "This is a notification test.").');
     } else {
       setNotificationTestStatus(`Could not send test notification: ${result.error || 'Unknown error'}`);
     }
@@ -362,7 +362,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                 Privacy & Notifications
               </h3>
               <p className="text-xs text-[#795B62]">
-                Choose how Aura should remind you.
+                Choose how Orienta should remind you.
               </p>
             </div>
           </div>
@@ -428,10 +428,10 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               </div>
               <div className="space-y-1">
                 <h4 className="text-sm font-bold text-[#8B0000]">
-                  Allow notifications from Aura?
+                  Allow notifications from Orienta?
                 </h4>
                 <p className="text-xs text-[#795B62] leading-relaxed">
-                  Aura will send gentle, privacy-safe wellness reminders. Reminder notifications will never reveal period dates, symptoms, or personal health info on your lock screen.
+                  Orienta will send gentle, privacy-safe wellness reminders. Reminder notifications will never reveal period dates, symptoms, or personal health info on your lock screen.
                 </p>
               </div>
             </div>

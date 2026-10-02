@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
       // Promptless auto-update on new build
     },
     onOfflineReady() {
-      console.log('Aura Cycle PWA: Offline cache ready');
+      console.log('Orienta PWA: Offline cache ready');
     },
   });
 }

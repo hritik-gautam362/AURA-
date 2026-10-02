@@ -20,8 +20,8 @@ export default defineConfig(() => {
           'icons/maskable-icon-512x512.png',
         ],
         manifest: {
-          name: 'Aura Cycle & Wellness',
-          short_name: 'Aura Cycle',
+          name: 'Orienta by FillFlow',
+          short_name: 'Orienta',
           description:
             'A private, zero-knowledge period tracker and menstrual cycle calendar with encrypted local health vault.',
           theme_color: '#8B0000',

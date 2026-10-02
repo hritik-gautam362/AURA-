@@ -213,7 +213,7 @@ export const CycleCard: React.FC<CycleCardProps> = ({
 
           <p className="text-xs sm:text-sm text-[#795B62] leading-relaxed max-w-xl">
             {isInitialState
-              ? 'Record when your period begins. Aura calculates cycle lengths, predicts fertile phases, and keeps your private wellness rhythm on this device.'
+              ? 'Record when your period begins. Orienta calculates cycle lengths, predicts fertile phases, and keeps your private wellness rhythm on this device.'
               : phaseDescription}
           </p>
 

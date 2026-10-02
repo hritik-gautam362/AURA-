@@ -60,17 +60,17 @@ export const Navigation: React.FC<NavigationProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onTabChange('home'); }}
-          aria-label="Aura Cycle Home"
+          aria-label="Orienta Home"
         >
           <div className="w-8 h-8 rounded-xl bg-[#8B0000] text-white flex items-center justify-center shadow-xs">
             <Heart className="w-4 h-4 fill-white" />
           </div>
           <div>
             <span className="text-base font-bold text-[#8B0000] tracking-tight font-serif">
-              Aura
+              Orienta
             </span>
             <span className="text-[10px] text-[#795B62] block font-medium -mt-1">
-              Cycle & Wellness
+              by FillFlow
             </span>
           </div>
         </div>
@@ -125,7 +125,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             role="button"
             tabIndex={0}
             onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onTabChange('home'); }}
-            aria-label="Aura Cycle Home"
+            aria-label="Orienta Home"
           >
             <div className="w-9 h-9 rounded-2xl bg-[#8B0000] text-white flex items-center justify-center shadow-xs">
               <Heart className="w-5 h-5 fill-white" />
@@ -133,7 +133,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-lg font-bold text-[#8B0000] tracking-tight font-serif">
-                  Aura
+                  Orienta
                 </span>
                 {!isOnline && (
                   <span
@@ -146,7 +146,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 )}
               </div>
               <span className="text-xs text-[#795B62] block font-medium -mt-1">
-                Cycle & Wellness
+                by FillFlow
               </span>
             </div>
           </div>

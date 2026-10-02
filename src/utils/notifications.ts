@@ -17,15 +17,15 @@ import {
  */
 export const PRIVACY_SAFE_NOTIFICATION_COPY = Object.freeze({
   REMINDER: {
-    title: 'Aura reminder',
+    title: 'Orienta reminder',
     body: 'You have a private wellness reminder.',
   },
   REMINDER_ALT: {
     title: 'A gentle reminder',
-    body: 'Open Aura to view your reminder.',
+    body: 'Open Orienta to view your reminder.',
   },
   TEST: {
-    title: 'Aura reminder',
+    title: 'Orienta reminder',
     body: 'This is a notification test.',
   },
 });
@@ -37,7 +37,7 @@ export const BROWSER_NOTIFICATION_LIMITATIONS = Object.freeze({
   soundControl:
     'Web browsers cannot universally override the host operating system sound, Focus Assist, or Do Not Disturb settings. "Silent" instructs the browser not to emit audio, while "On + Sound" requests standard alert behavior subject to user OS preferences.',
   backgroundScheduling:
-    'Client-side web applications without a push server cannot execute arbitrary future local alarms when completely closed on platforms lacking the Web Periodic Background Sync or Notification Triggers APIs. Reminders are evaluated when Aura is opened or resumed.',
+    'Client-side web applications without a push server cannot execute arbitrary future local alarms when completely closed on platforms lacking the Web Periodic Background Sync or Notification Triggers APIs. Reminders are evaluated when Orienta is opened or resumed.',
 });
 
 /**

@@ -33,7 +33,7 @@ export function exportBackupJSON(
   dailyLogs: Record<string, DailyLog>
 ): string {
   const exportData = {
-    app: 'Aura Period Tracker',
+    app: 'Orienta by FillFlow',
     version: '2.0',
     exportedAt: new Date().toISOString(),
     settings,
