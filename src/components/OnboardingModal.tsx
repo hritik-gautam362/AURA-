@@ -9,7 +9,6 @@ import { getTodayDateString } from '../utils/cycleCalculations';
 import {
   Sparkles,
   Calendar,
-  Heart,
   TrendingUp,
   ArrowRight,
   Check,
@@ -80,9 +79,11 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         {/* Step 1 */}
         {step === 1 && (
           <div className="space-y-6 text-center animate-in fade-in zoom-in-95 duration-200">
-            <div className="w-16 h-16 rounded-3xl bg-[#FFF0F4] text-[#8B0000] flex items-center justify-center mx-auto shadow-xs">
-              <Heart className="w-8 h-8 fill-[#FCE4EC]" />
-            </div>
+            <img
+              src="/orienta-logo.png"
+              alt="Orienta by FillFlow"
+              className="w-16 h-16 rounded-2xl object-contain mx-auto shadow-md"
+            />
 
             <div className="space-y-2">
               <h3 className="text-2xl font-bold text-[#2B171B] font-serif">

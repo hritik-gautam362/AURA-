@@ -14,6 +14,8 @@ export default defineConfig(() => {
         manifestFilename: 'manifest.webmanifest',
         includeAssets: [
           'favicon.ico',
+          'favicon.png',
+          'orienta-logo.png',
           'icons/icon.svg',
           'icons/icon-192x192.png',
           'icons/icon-512x512.png',

@@ -56,7 +56,7 @@ import { ConfirmationModal } from './components/ConfirmationModal';
 import { SecurityProvider, useSecurity } from './security/SecurityContext';
 import { LockScreen } from './components/LockScreen';
 import { MigrationModal } from './components/MigrationModal';
-import { AlertTriangle, ShieldCheck, Heart } from 'lucide-react';
+import { AlertTriangle, ShieldCheck } from 'lucide-react';
 
 function AppContent() {
   const { isUnlocked, lock, withUnlockedKey } = useSecurity();
@@ -534,9 +534,11 @@ function AppContent() {
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-[#FCE4EC] opacity-60 blur-3xl pointer-events-none animate-aura-pulse" />
 
         <div className="relative z-10 flex flex-col items-center space-y-4 max-w-sm text-center card-fade-in">
-          <div className="w-16 h-16 rounded-3xl bg-white border border-[#F5E6E8] flex items-center justify-center text-[#8B0000] shadow-md animate-aura-pulse">
-            <Heart className="w-8 h-8 fill-[#8B0000]" />
-          </div>
+          <img
+            src="/orienta-logo.png"
+            alt="Orienta by FillFlow"
+            className="w-16 h-16 rounded-2xl object-contain shadow-md animate-aura-pulse"
+          />
           <div className="space-y-1.5">
             <h3 className="text-xl font-bold font-serif text-[#2B171B]">
               Opening Your Private Vault
