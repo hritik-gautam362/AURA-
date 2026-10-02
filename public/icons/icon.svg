@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B0000"/>
+      <stop offset="60%" stop-color="#A50E2A"/>
+      <stop offset="100%" stop-color="#5B000B"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD1DC" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFA4B6" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#FFF0F4"/>
+      <stop offset="100%" stop-color="#FFCDD2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Aura Ambient Rings -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#glowGrad)" stroke-width="2" opacity="0.3" stroke-dasharray="8 6"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="url(#glowGrad)" stroke-width="3" opacity="0.45"/>
+
+  <!-- Glowing Crescent Cycle Arc -->
+  <path d="M 256,106 A 150,150 0 1 0 406,256 A 120,120 0 1 1 256,136 Z" 
+        fill="url(#glowGrad)" 
+        opacity="0.35" 
+        filter="url(#softGlow)"/>
+
+  <!-- Heart & Droplet Hybrid Icon -->
+  <g filter="url(#shadow)">
+    <!-- Central Wellness Droplet -->
+    <path d="M 256,130 C 256,130 176,238 176,306 C 176,350 212,386 256,386 C 300,386 336,350 336,306 C 336,238 256,130 256,130 Z" 
+          fill="url(#dropGrad)"/>
+
+    <!-- Inner Heart Accent -->
+    <path d="M 256,260 C 250,248 238,240 224,240 C 206,240 192,254 192,272 C 192,298 256,346 256,346 C 256,346 320,298 320,272 C 320,254 306,240 288,240 C 274,240 262,248 256,260 Z" 
+          fill="#8B0000" 
+          opacity="0.9"/>
+  </g>
+
+  <!-- Sparkle Stars -->
+  <circle cx="360" cy="160" r="8" fill="#FFF0F4" opacity="0.9" filter="url(#softGlow)"/>
+  <path d="M 360,144 Q 360,160 376,160 Q 360,160 360,176 Q 360,160 344,160 Q 360,160 360,144 Z" fill="#FFFFFF"/>
+
+  <circle cx="150" cy="340" r="5" fill="#FFF0F4" opacity="0.8" filter="url(#softGlow)"/>
+  <path d="M 150,330 Q 150,340 160,340 Q 150,340 150,350 Q 150,340 140,340 Q 150,340 150,330 Z" fill="#FFFFFF"/>
+</svg>

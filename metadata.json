@@ -1,0 +1,6 @@
+{
+  "name": "Period Tracker & Cycle Calendar",
+  "description": "A private, accurate period tracking and menstrual cycle calendar web app with custom symptom logging, phase prediction, and cycle insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Development SSL/TLS certificates, keys, and stores
+certs/
+*.pem
+*.key
+*.crt
+*.pfx
+*.csr
